@@ -116,7 +116,7 @@ Tests cover:
 
 ## Notes
 
-* The solver uses a **prefix map optimization** to efficiently prune the search space.
+* The solver uses a **prefix map optimisation** to efficiently prune the search space.
 * No 2D arrays are used; rows are represented as strings.
 * Ensure Python 3.11+ (or compatible) is used.
 * For reproducibility, it is recommended to keep `enable1.txt` locally, though the program can also download it automatically.

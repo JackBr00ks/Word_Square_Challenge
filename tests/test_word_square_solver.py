@@ -22,7 +22,6 @@ def test_find_candidates():
     letters = "aabc"
     n = 2
     candidates = solver.find_candidates(letters, n)
-    # Only 2-letter words that use letters from "aabc"
     assert all(len(w) == n for w in candidates)
     assert all(set(w).issubset(set(letters)) for w in candidates)
     
@@ -30,7 +29,6 @@ def test_build_prefix_map():
     solver = WordSquareSolver()
     candidates = ["cat", "car", "dog"]
     pm = solver.build_prefix_map(candidates)
-    # Every prefix should be a key
     expected_prefixes = ["", "c", "ca", "cat", "car", "d", "do", "dog"]
     for prefix in expected_prefixes:
         assert prefix in pm
